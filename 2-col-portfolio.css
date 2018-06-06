@@ -5,12 +5,12 @@
  */
 
 body {
-  padding-top: 90px;
+  padding-top: 200px;
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 89px;
+    padding-top: 200px;
   }
 }
 
