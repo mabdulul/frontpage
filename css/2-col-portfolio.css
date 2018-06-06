@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - 2 Col Portfolio (https://startbootstrap.com/template-overviews/2-col-portfolio)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-2-col-portfolio/blob/master/LICENSE)
+ * Start Bootstrap - 1 Col Portfolio (https://startbootstrap.com/template-overviews/1-col-portfolio)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio/blob/master/LICENSE)
  */
 
 body {
@@ -14,10 +14,7 @@ body {
   }
 }
 
-.portfolio-item {
-  margin-bottom: 30px;
+.pagination {
+  margin-bottom: 15px;
 }
 
-.pagination {
-  margin-bottom: 30px;
-}
