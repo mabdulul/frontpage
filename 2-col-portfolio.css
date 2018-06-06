@@ -10,6 +10,9 @@ body {
 h1.my-4 {
     padding-top: 50px;
 }
+div#mystuff {
+    padding-top: 56px;
+}
 
 @media (min-width: 992px) {
   body {
