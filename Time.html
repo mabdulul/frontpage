@@ -1,0 +1,91 @@
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link href="style2.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p id="timestyle">time
+          <p id="time"></p>
+        </p>
+
+        <script src="js/resume.js"></script>
+
+      </div>
+
+    </div>
+  </div>
+  
+  
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Raleway:900|Khula:800|Tienne:900);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 44, 0);
+}
+
+#timestyle,  #time {
+  text-transform: uppercase;
+  font-size: 13vw;
+  font-family: 'Khula', sans-serif;
+  text-align: center;
+}
+
+  </style>
+  <script>
+  function TimeFunction() {
+  var today = new Date();
+  var theMin = today.getMinutes();
+  var thehours = today.getHours();
+  console.log(thehours); 
+
+  var timeofday;
+  var numhours = thehours;
+  if (numhours == 0){
+    timeofDay = "AM";
+    numhours = numhours + 12 ; 
+  }
+  else if (numhours < 12) {
+
+    timeofDay = "AM";
+
+  }
+  else if (numhours == 12){
+    timeofDay = "PM";
+    numhours = numhours ; 
+  }
+  
+  
+  else {
+    timeofDay = "PM";
+    numhours = numhours - 12;
+
+  }
+//Geting the minutues 
+  var minue;
+  if (theMin < 10) {
+    minue = "0" + theMin;
+
+  } else {
+    minue = theMin;
+  }
+
+  var words = numhours + ":" + minue + ":" + timeofDay
+  document.getElementById("time").innerHTML = words;
+
+}
+
+setInterval(TimeFunction, 1000)
+    </script>
+</body>
